@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Comic Sans MS", cursive;
+  color: #00ffee;
+  user-select: none;
+}
+
+#holograma {
+  width: 90vmin;
+  max-width: 600px;
+  filter: brightness(1.6) drop-shadow(0 0 25px #00f2ff);
+  animation: flutuar 4s infinite ease-in-out, brilhar 2s infinite alternate;
+}
+
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes brilhar {
+  from { filter: brightness(1.4) drop-shadow(0 0 10px #00ccff); }
+  to   { filter: brightness(1.8) drop-shadow(0 0 30px #00ffee); }
+}
+
+#fala-mipha {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid #00ffee;
+  border-radius: 12px;
+  font-size: 18px;
+  text-align: center;
+  max-width: 90%;
+  text-shadow: 0 0 5px #00ffee;
+}
